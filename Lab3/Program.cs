@@ -15,14 +15,14 @@ public class Program
         for (int i = 1; i <= MAX_PAIRS; i++)
             votes.Add(i, 0);
 
-        int countSMS;
+        uint countSMS;
 
         #region Ввод количества сообщений
         while (true)
         {
             Console.Write("Введите количество SMS-сообщений: ");
 
-            if (!int.TryParse(Console.ReadLine(), out var n))
+            if (!uint.TryParse(Console.ReadLine(), out var n))
                 continue;
 
             countSMS = n;
@@ -31,11 +31,11 @@ public class Program
         #endregion
 
         #region Случайное заполнение команд голосами
-        for (int i = 0; i < countSMS; i++)
+        var random = new Random();
+        int pairNumber;
+        for (uint i = 0; i < countSMS; i++)
         {
-            var random = new Random();
-
-            var pairNumber = random.Next(1, MAX_PAIRS + 1);
+            pairNumber = random.Next(1, MAX_PAIRS + 1);
 
             if (votes.ContainsKey(pairNumber))
                 votes[pairNumber]++;
