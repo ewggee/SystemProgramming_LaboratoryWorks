@@ -39,12 +39,12 @@ class Program
         if (first < 0)
         {
             isFirstNeg = true;
-            first = ~first + 1;
+            first = Math.Abs(first);
         }
         if (second < 0)
         {
             isSecondNeg = true;
-            second = ~second + 1;
+            second = Math.Abs(second);
         }
         #endregion
 
@@ -54,13 +54,13 @@ class Program
         #region Инверсия ответов, если установлены флаги отрицательных чисел
         if (isFirstNeg)
         {
-            recursive = ~recursive + 1;
-            binary = ~binary + 1;
+            recursive = 0 - recursive;
+            binary = 0 - binary;
         }
         if (isSecondNeg)
         {
-            recursive = ~recursive + 1;
-            binary = ~binary + 1;
+            recursive = 0 - recursive;
+            binary = 0 - binary;
         }
         #endregion
 
