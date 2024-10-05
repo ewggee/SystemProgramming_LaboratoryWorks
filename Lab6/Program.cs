@@ -40,7 +40,6 @@ class Program
                 .Replace(".txt", string.Empty);
 
             // Запись в файл .svc
-            var n = filename + ".svc";
             File.WriteAllText(filename + ".svc", result);
         }
         catch (FileNotFoundException ex)
