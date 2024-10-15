@@ -26,16 +26,11 @@ class Program
             var paragraphsCount =
                 text.Where(s => s == '\t').Count();
 
-            // Страницы
-            var pagesCount = 
-                text.Where(s => s == '\u000A').Count();
-
             var result =
                 $"Все символы: {text.Length}\n" +
                 $"Символы без пробелов: {withoutSpaceCount}\n" +
                 $"Слова: {wordsCount}\n" +
-                $"Абзацы: {paragraphsCount}\n" +
-                $"Страницы: {pagesCount}";
+                $"Абзацы: {paragraphsCount}";
 
             Console.WriteLine(result);
 
@@ -45,6 +40,7 @@ class Program
                 .Replace(".txt", string.Empty);
 
             // Запись в файл .svc
+            var n = filename + ".svc";
             File.WriteAllText(filename + ".svc", result);
         }
         catch (FileNotFoundException ex)
