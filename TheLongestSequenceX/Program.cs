@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Data;
+using System.Net;
 
 namespace TheLongestSequenceX;
 
@@ -13,24 +14,32 @@ public class Program
 
         StreamReader reader = new(stream);
 
-        var currentLength = 0;
-        var maxLength = 0;
+        //var currentLength = 0;
+        //var maxLength = 0;
 
-        int readChar;
-        while ((readChar = reader.Read()) != -1)
-        {
-            if ((char)readChar == 'X')
-            {
-                currentLength++;
-            }
-            else
-            {
-                maxLength = Math.Max(maxLength, currentLength);
-                currentLength = 0;
-            }
-        }
+        //int readChar;
+        //while ((readChar = reader.Read()) != -1)
+        //{
+        //    if ((char)readChar == 'X')
+        //    {
+        //        currentLength++;
+        //    }
+        //    else
+        //    {
+        //        maxLength = Math.Max(maxLength, currentLength);
+        //        currentLength = 0;
+        //    }
+        //}
 
-        maxLength = Math.Max(maxLength, currentLength);
-        Console.WriteLine($"Самая длинная последовательность X: {maxLength}");
+        //maxLength = Math.Max(maxLength, currentLength);
+        //Console.WriteLine($"Самая длинная последовательность X: {maxLength}");
+
+        var text = reader.ReadToEnd();
+        Console.WriteLine(text
+            .Split(new char[] { 'Y', 'Z' }, StringSplitOptions.RemoveEmptyEntries)
+            .Where(s => s.All(c => c == 'X'))
+            .OrderByDescending(s => s.Length)
+            .FirstOrDefault()
+        );
     }
 }
