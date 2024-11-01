@@ -20,9 +20,7 @@ class Program
             var secondNumber = int.Parse(pair.Last());
 
             // Добавление наибольшего числа из пары к общей максимальной сумме
-            maxSum += firstNumber > secondNumber
-                ? firstNumber 
-                : secondNumber;
+            maxSum += Math.Max(firstNumber, secondNumber);
 
             // Нахождение минимальной разницы в парах
             if ((firstNumber - secondNumber) % 3 != 0)
@@ -32,9 +30,8 @@ class Program
         }
 
         // Если максимальная сумма делится на 3 - вычесть из неё минимальную разницу в парах
-        maxSum = maxSum % 3 == 0
-            ? maxSum - minPairDifference
-            : maxSum;
+        if (maxSum % 3 == 0)
+            maxSum -= minPairDifference;
 
         Console.WriteLine(maxSum);
     }
