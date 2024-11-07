@@ -17,7 +17,7 @@
 | Lab5 |
 | RabbitAndTurtle |
 | Chocolates |
-| ChickenOrEgg |
+| [ChickenOrEgg](https://github.com/s0cutegirl/SystemProgramming_LaboratoryWorks/tree/master/ChickenOrEgg) |
 | Lab6 |
 | Lab7 |
 | Lab8 |
