@@ -1,5 +1,5 @@
 # Системное программирование
-Решения для алгоритмических задач и лабораторных работ по предмету "Системное программирование". <!-- описание репозитория -->
+Решения алгоритмических задач и лабораторных работ по предмету "Системное программирование". <!-- описание репозитория -->
 <!-- блок информации о репозитории в бейджах -->
 ![GitHub top language](https://img.shields.io/github/languages/top/s0cutegirl/SystemProgramming_LaboratoryWorks)
 ![Static Badge](https://img.shields.io/badge/s0cutegirl-SystemProgramming_LaboratoryWorks-SystemProgramming_LaboratoryWorks)
