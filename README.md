@@ -7,7 +7,7 @@
 ![Logotype](https://avatars.githubusercontent.com/u/157199452?v=4)
 
 <!-- описание file tree -->
-### File tree по дате создания
+### File tree
 | Название                     |
 |------------------------------|
 | [Homework1_MajorityNumber](https://github.com/s0cutegirl/SystemProgramming_LaboratoryWorks/tree/master/Homework1_MajorityNumber)	   |
