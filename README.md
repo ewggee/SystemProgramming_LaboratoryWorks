@@ -7,8 +7,22 @@
 ![Logotype](https://avatars.githubusercontent.com/u/157199452?v=4)
 
 <!--описание коммитов-->
-### File tree
-| Название                     | Описание                                                        |
-|------------------------------|-----------------------------------------------------------------|
-| Homework1_MajorityNumber	   |                                                                 |
-| Homework2                    ||
+### File tree по дате создания
+| Название                     |
+|------------------------------|
+| Homework1_MajorityNumber	   |
+| Homework2                    |
+| Lab3 |
+| Lab4 |
+| Lab5 |
+| RabbitAndTurtle |
+| Chocolates |
+| ChickenOrEgg |
+| Lab6 |
+| Lab7 |
+| Lab8 |
+| TheLongestSequenceX |
+| Lab9 |
+| Lab10 |
+| Lab11 |
+| Lab12 |
